@@ -11,12 +11,6 @@ def countdown(n):
 
 countdown(5) # 5 4 3 2 1 0
 
-# Exemplo de custom module.
-import lqsmath
-
-soma = lqsmath.soma
-print(soma(1, 2))
-
 # Exemplo do uso de lambda.
 soma_lambda = lambda x, y: x + y
 print(soma_lambda(3, 4))
