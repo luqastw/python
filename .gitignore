@@ -1,6 +1,6 @@
 # Byte-compiled / cache files
 __pycache__/
-*.py[cod]
+*.py[cod]w
 *$py.class
 
 # Virtual environment
