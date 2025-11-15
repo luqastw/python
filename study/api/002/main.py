@@ -43,3 +43,12 @@ def complete_task(Task_id: int):
             return {"message": f"Tarefa {Task_id} concluída!"}
         
     return {"error": "Tarefa não encontrada."}
+
+@app.delete("/tasks/{Task_id}/delete")
+def delete_task(Task_id: int):
+    for i, t in enumerate(tasks):
+        if t.id == Task_id:
+            removed = tasks.pop(i)
+            return {"message": f"Tarefa {Task_id} deletada."}
+
+    return {"error": "Tarefa não encontrada."}
